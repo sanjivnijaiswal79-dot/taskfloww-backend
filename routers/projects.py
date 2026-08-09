@@ -18,9 +18,9 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy import func
 from sqlalchemy.orm import Session
 
-from ..database import get_db
-from ..models import Project, Task, User
-from ..schemas import (
+from database import get_db
+from models import Project, Task, User
+from schemas import (
     ProjectCreate,
     ProjectResponse,
     ProjectStatsResponse,

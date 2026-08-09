@@ -13,9 +13,9 @@ These are read-only convenience endpoints that follow the natural hierarchy:
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
-from ..database import get_db
-from ..models import Project, Task, User
-from ..schemas import ProjectResponse, TaskResponse
+from database import get_db
+from models import Project, Task, User
+from schemas import ProjectResponse, TaskResponse
 
 router = APIRouter(tags=["nested"])
 

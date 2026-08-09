@@ -22,8 +22,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import Response
 
-from .database import create_tables
-from .routers import nested, projects, tasks, users
+from database import create_tables
+from routers import nested, projects, tasks, users
 
 # Load .env file (project root). Shell variables take precedence.
 load_dotenv()

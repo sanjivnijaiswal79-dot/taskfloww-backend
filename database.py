@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session, sessionmaker
 
-from .models import Base
+from models import Base
 
 # Load .env from project root. Shell variables take precedence.
 load_dotenv()

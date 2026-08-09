@@ -50,11 +50,11 @@ import os
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.orm import Session
 
-from ..database import get_db
-from ..models import Project, Task
-from ..schemas import QuickAddRequest, TaskCreate, TaskResponse, TaskUpdate
-from ..algorithms import binary_search, insertion_sort, linear_search
-from ..parser import build_prompt, parse_quick_add
+from database import get_db
+from models import Project, Task
+from schemas import QuickAddRequest, TaskCreate, TaskResponse, TaskUpdate
+from algorithms import binary_search, insertion_sort, linear_search
+from parser import build_prompt, parse_quick_add
 
 router = APIRouter(prefix="/tasks", tags=["tasks"])
 
